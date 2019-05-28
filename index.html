@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baza Wiedzy</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="container">
+        <section class="article">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/f_logo.jpg" alt="Fakturownia">
+                </div>
+                <div class="main_list">
+                    <div class="invoices_content">
+                        <h3 id="invoices" onclick="toggle_visibility('invoices_list')">Faktury</h3>
+                        <ul id="invoices_list">
+                            <li>Wiele firm i działów</li>
+                            <li>Uytkownicy</li>
+                            <li>Stawki/Faktury VAT</li>
+                            <li>Opcje faktur</li>
+                            <li>Wysyłanie faktury</li>
+                            <li>Zmiana wyglądu faktury</li>
+                            <li>Faktura europejska</li>
+                            <li>Wydatki</li>
+                            <li>Zamówienia</li>
+                            <li>Rodzaje dokumentów</li>
+                            <li>Faktury cykliczne</li>
+                            <li>Inne faktury</li>
+                        </ul>
+                    </div>
+                    <div class="storehouse_content">
+                        <h3 class="storehouse" onclick="toggle_visibility('storehouse_list')">Magazyn</h3>
+                        <ul id="storehouse_list">
+                            <li>sample</li>
+                            <li>sample</li>
+                            <li>sample</li>
+                        </ul>
+                    </div>
+                    <div class="accountant_content">
+                        <h3 class="accountant" onclick="toggle_visibility('accountant_list')">Księgowość i raporty</h3>
+                        <ul id="accountant_list">
+                            <li>sample</li>
+                            <li>sample</li>
+                            <li>sample</li>
+                        </ul>
+                    </div>
+                    <div class="migrations_content">
+                        <h3 class="migrations" onclick="toggle_visibility('migrations_list')">Migracje i integracje</h3>
+                        <ul id="migrations_list">
+                            <li>sample</li>
+                            <li>sample</li>
+                            <li>sample</li>
+                        </ul>
+                    </div>
+                    <div class="autopayment_content">
+                        <h3 class="autopayment" onclick="toggle_visibility('autopayment_list')">Autoplatnosci</h3>
+                        <ul id="autopayment_list">
+                            <li>sample</li>
+                            <li>sample</li>
+                            <li>sample</li>
+                        </ul>
+                    </div>
+                    <div class="config_content">
+                        <h3 class="config"  onclick="toggle_visibility('config_list')">Konfiguracja</h3>
+                        <ul id="config_list">
+                            <li>sample</li>
+                            <li>sample</li>
+                            <li>sample</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content_header">
+                    <div id="toogle_burger">
+                        <input type="checkbox"/>
+                        <span></span>
+                    </div>
+                    <div class="page_search">
+                        <input type="search" name="page_search" id="page_search" placeholder="Wpisz czego szukasz...">
+                        <button class="page_search_btn">
+                            <img src="./img/search_icon.png" alt="nie ma">
+                        </button>                
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><span>Home</span></li>
+                            <li><span>Artykuły</span></li>
+                            <li><span>Kategorie</span></li>
+                            <li><span>Kontakt</span></li>
+                        </ul>
+                    </nav>
+                    <div class="headers_btns">
+                        <button class="btn-txt">Nie masz konta?</button>
+                        <button class="btn-filled">Zaloguj</button>
+                        <button class="btn-empty">Dodaj sugestię +</button>
+                    </div>
+                </div>
+                <div class="content_article">
+                    <p class="article-info">Utworzono: 2014-01-24 / Aktualizacja: 2019-03-11</p>
+                    <h2>Jak wystawić fakturę VAT z Faktury Proforma?</h2>
+                    <p class="article-info">Liczba odwiedzin posta: <strong> 6557</strong></p>
+                    <div class="article_details info">
+                        <h3>Who can use this feature?</h3>
+                        <div class="article_details-box">
+                            <i class="far fa-user"></i>
+                            <p><span>Workspace Owners</span> and <span>Workspace Admins</span></p>
+                        </div>
+                        <div class="article_details-box">
+                            <i class="far fa-flag"></i>
+                            <p><span>Free</span>, <span>Standard</span>, <span>Plus</span>, and <span>Enterprise Grid</span></p>
+                        </div>
+                    </div>
+                    <div class="article-text">
+                        <p>Główną stawkę podatku oraz nazwę podatku możesz zdefiniować w menu <span>Ustawienia > Ustawienia konta > Konfiguracja > Domyślny % podatku oraz Nazwa podatku.</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis tenetur culpa tempora sequi unde laboriosam a quo rem minima harum, ad voluptates maxime officia nobis ipsam cupiditate facere fugiat!
+                        <div class="article_details alert">
+                            <div class="article_details-box ">
+                                <i class="far fa-bell"></i>
+                                <p><span>Warning: </span> Once a channel has been deleted, it can't be restored. Proceed with care.</p>
+                            </div>
+                        </div>
+                        <div class="article_details note">
+                            <div class="article_details-box">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <p><span>Note: </span>Channels that are shared with another workspace can be deleted too. A Workspace Owner or Workspace Admin must stop sharing the channel before following the steps above.</p>
+                            </div>
+                        </div>
+                        <div class="article_details tip">
+                            <div class="article_details-box">
+                                <i class="fas fa-magic"></i>
+                                <p><span>Tip: </span>Channels that are shared with another workspace can be deleted too. A Workspace Owner or Workspace Admin must stop sharing the channel before following the steps above.</p>
+                            </div>
+                        </div>
+                        <p>Dla firm które wysyłają e-maile w różnych wersjach językowych lub chcą wysyłać e-maile z różnych adresów udostępniliśmy możliwość osobnej konfiguracji wysyłki e-mail dla działów.</p>                            
+                        <p>Wystawiając faktury bez VAT (dawne rachunki) możesz ukryć na fakturze kolumnę VAT wybierając <span>"nie wyświetlaj"</span>. Jeśli wystawiasz tylko rachunki możesz na stałe ukryć kolumnę VAT w menu <span>Ustawienia > Ustawienia konta > Faktury z VAT czy bez VAT​.</span></p>
+                        <ul>Można np. stworzyć kilka działów firmy:
+                            <li>dział polski</li>
+                            <li>dział angielski</li>
+                            <li>dział niemiecki</li>
+                        </ul>
+                        <ol>Można np. stworzyć kilka działów firmy:
+                            <li>dział polski</li>
+                            <li>dział angielski</li>
+                            <li>dział niemiecki</li>
+                        </ol>
+                    </div>
+                    <div class="article-images img-magnifier-container">   
+                        <div class="magnifier_btn">
+                            <i class="fas fa-plus"></i>
+                        </div>                     
+                        <img src="./img/01.png" alt="img" class="img-magnifier-img" id="first_img" onmouseover="">
+                    </div>
+                    <div class="article-text">
+                        <h3>Konfiguracja wydruku przez CSS</h3>
+                        <p>Kod css zmieniający frazę <span>Imię i nazwisko Wystawcy/Odbiorcy</span> na frazę <span>Imię i nazwisko osoby upoważnionej do wystawiania/odbioru faktury </span></p>                                    
+                        <div class="article-text">
+                            <h3>Dla szablonów default,old,blue:</h3>
+                            <div class="article-code">
+                                <textarea id="code-to-copy" >}@media all{<br>
+                                .buyer_person strong{<br>
+                                position:relative;<br>
+                                color:transparent;<br>
+                                margin:0 0 30px 0;<br>
+                                }<br>
+                                .buyer_person strong:before{<br>
+                                content:'Imie i nazwisko osoby upoważnionej do odbioru faktury';<br>
+                                position:absolute;<br>
+                                top:0;<br>
+                                left:0;<br>
+                                right:0;<br>
+                                bottom:0;<br>
+                                color: black;<br>
+                                text-align: center;<br>
+                                }<br>
+                                #inv_seller_person strong{<br>
+                                position:relative;<br>
+                                color:transparent;<br>
+                                margin:0 0 30px 0;<br>
+                                }<br>
+                                #inv_seller_person strong:before{<br>
+                                content:'Imie i nazwisko osoby upoważnionej do wystawienia faktury';<br>
+                                position:absolute;<br>
+                                top:0;<br>
+                                left:0;<br>
+                                right:0;<br>
+                                bottom:0;<br>
+                                color: black;<br>
+                                text-align: center;<br>
+                                }<br>
+                                }</textarea>
+                            </div>
+                            <button class="btn-empty" onclick="copyCode()">Kopiuj kod</button>
+                            <button id="showCode" class="btn-empty" onclick="showCode()">Zobacz kod</button>
+                            <button id="hideCode" class="btn-empty hide" onclick="hideCode()">Zwiń kod</button>
+                        </div>                        
+                    </div>
+                    
+                    <div class="article-images img-magnifier-container">
+                        <div class="magnifier_btn">
+                            <i class="fas fa-plus"></i>
+                        </div>  
+                        <img src="./img/03.png" alt="img" class="img-magnifier-img" id="second_img">
+                    </div>
+                   
+                    <div class="article-text reasuming">
+                        <div class="article-text-box">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h3>Was this article helpful?</h3>
+                            <button class="btn-empty" id="response_yes" onclick="textOpen(yes)" >Yes, thanks!</button>
+                            <button class="btn-empty" id="response_no" onclick="textOpen(no)">Not really</button>
+                        </div>   
+                        <div id="reasuming-response">
+                            <textarea id='textinput' autocomplete="off"></textarea>
+                            <div class="response-counter">
+                                <span id='count'></span>
+                                <button class="btn-filled">Wyślij</button>
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="articles_more">
+                        <div class="related_articles">
+                            <h3>Related Articles</h3>
+                            <ul>
+                                <li>Guide to billing at Slack</li>
+                                <li>Message, file storage, and app limits on the Free plan</li>
+                                <li>What is Slack Enterprise Grid?</li>
+                                <li>Create an announce-only channel</li>
+                            </ul>
+                        </div>
+                        <div class="related_articles">
+                            <h3>New Articles</h3>
+                            <ul>
+                                <li>Guide to billing at Slack</li>
+                                <li>Message, file storage, and app limits on the Free plan</li>
+                                <li>What is Slack Enterprise Grid?</li>
+                                <li>Create an announce-only channel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="article_details comment">
+                        <div class="article_details-box">
+                            <i class="far fa-comment"></i>
+                            <p id="userName">Napisz komentarz...</p>
+                            <input type="text" autocomplete="off" class="hide">
+                        </div>
+                        <div class="comment_box hide">
+                            <textarea name="user_comment" id="user_comment" cols="30" rows="8" autocomplete="off"></textarea>
+                            <button class="btn-empty">Dodaj komentarz</button>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <footer>
+            <div class="footer_content">
+                <div class="contact">
+                    <h3>Jesteśmy dostępni:</h3>
+                    <ul>
+                        <li>od Pon-Pt / 9:00 - 17:00</li>
+                        <li>helpdesk@fakturownia.pl</li>
+                        <li>+48 22 599 4019</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <h3>Produkt</h3>
+                    <div class="product_list">
+                        <ul>
+                            <li>Funkcje programu</li>
+                            <li>Opinie klientów</li>
+                            <li>Historie klinetów</li>      
+                            <li>ekoFakturowanie</li>
+                            <li>Bitcoin</li>
+                        </ul>
+                        <ul>
+                            <li>Wiele języków</li>
+                            <li>Faktury międzynarodowe</li>
+                            <li>O nas w sieci</li>
+                            <li>Aplikacja mobilna</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="help">
+                    <h3>Pomoc</h3>
+                    <ul>
+                        <li>Baza wiedzy</li>
+                        <li>Forum sugestii</li>
+                        <li>Blog</li>
+                        <li>Logowanie</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+<script>
+    // -------------------------respond and textarea letter counter--------------------------
+var yes = 'What did you like about this';
+var no = "Sorry about that. What can we do for You?";
+var response = document.getElementById('reasuming-response');
+function textOpen(text){
+    response.style.display = "block";
+    document.getElementById('textinput').placeholder = text;
+}
+var maxchar = 160;
+var i = document.getElementById("textinput");
+var c = document.getElementById("count");
+c.innerHTML = maxchar + " /160";
+
+i.addEventListener("keydown",count);
+function count(e){
+    var len =  i.value.length;
+    if (len >= maxchar){
+       e.preventDefault();
+    } else{
+       c.innerHTML = maxchar - len-1 + " /160";   
+    }
+}
+ function toggle_visibility(e) {
+  var x = document.getElementById(e);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+};
+
+
+
+//-----------------comments-----------------------
+var userComment = document.querySelector('.comment');
+var userName = document.getElementById('userName');
+userComment.addEventListener('click', function() {
+    console.log(this.children[0].nextElementSibling);
+    // this.classList.toggle('comment_active');
+    userName.innerText = 'Nick lub Imię i Nazwisko:';
+    this.children[0].lastElementChild.classList.remove('hide');
+    this.children[0].lastElementChild.style.width = '200px';
+    this.children[0].nextElementSibling.classList.remove('hide');
+})
+
+
+
+// --------------------copy code btn-----------------------
+function copyCode(){
+    var copyText = document.getElementById("code-to-copy");
+    console.log(copyText.value);
+    copyText.select();
+    document.execCommand("Copy");
+}
+function showCode(){
+    var showText = document.getElementById("code-to-copy");
+    showText.parentElement.style.height = "500px"; 
+    showText.style.overflow = "scroll"; 
+    document.getElementById('hideCode').classList.remove("hide");
+    document.getElementById('showCode').classList.add("hide");
+}
+function hideCode(){
+    var showText = document.getElementById("code-to-copy");
+    showText.parentElement.style.height = "100px"; 
+    showText.style.overflow = "hidden"; 
+    document.getElementById('showCode').classList.remove("hide");
+    document.getElementById('hideCode').classList.add("hide");
+}
+
+
+// ------------------lupe--------------------------
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+
+  /* Create magnifier glass: */
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+  glass.classList.add('hide');
+
+
+  /* Insert magnifier glass: */
+  img.parentElement.insertBefore(glass, img);
+
+  /* Set background properties for the magnifier glass: */
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+
+  /* Execute a function when someone moves the magnifier glass over the image: */
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Prevent the magnifier glass from being positioned outside the image: */
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /* Set the position of the magnifier glass: */
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /* Display what the magnifier glass "sees": */
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+//   glass.style.display = 'block';
+}
+magnify("first_img", 2);
+magnify("second_img", 2);
+
+
+zoomImg = Array.from(document.getElementsByClassName('magnifier_btn'));
+zoomImg.forEach((el) => {
+    el.addEventListener("click", function() {
+        el.nextElementSibling.classList.toggle('hide');
+        el.children[0].classList.toggle('turn');
+    });
+});
+
+
+
+</script>
