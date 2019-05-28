@@ -74,8 +74,8 @@ ol, ul {
 	justify-content: center;
 }
 .logo img{
-	width: 10rem;
-	height: auto;
+	width: auto;
+        height: 44px;
 }
 /* ------------------------------------------------ */
 /* search */
