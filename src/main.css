@@ -608,6 +608,9 @@ footer h3{
 .info i{
 	color: var(--main);
 }
+.info h3{
+	margin: 0;
+}
 .alert i{
 	color: var(--alert);
 }
